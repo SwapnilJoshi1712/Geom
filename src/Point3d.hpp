@@ -3,7 +3,7 @@
 
 #include "Shape.hpp"
 
-class Vector;
+class Vector; //forward declaration
 class Point: public Shape{
   public:
 	  friend Vector; 

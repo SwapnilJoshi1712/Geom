@@ -28,7 +28,7 @@ public:
 //	bool isProper() const;
 
 //	void info() const;
-//	double magnitude const;
+	double magnitude();
 //	double dot(const Vector& v) const;
 
 	//modifiers

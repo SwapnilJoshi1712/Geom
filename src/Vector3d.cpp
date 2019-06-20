@@ -27,6 +27,10 @@ void Vector::print(){
 	std::cout <<  mI << " " << mJ << " " << mK << "\n";
 
 }
+
+double Vector::magnitude() {
+	return sqrt(mI*mI + mJ*mJ + mK*mK);
+}
 /*
 bool Vector::isNull(){
 	if(mI==0)&&(mJ==0)&&(mK==0);
