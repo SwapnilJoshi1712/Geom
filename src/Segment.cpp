@@ -3,7 +3,7 @@
 #include <iostream>
 
 #include "Vector3d.hpp"
-
+#include "Point3d.hpp"
 
 Segment::Segment(Point pt1, Point pt2):Shape(){
 	p1 = pt1;
@@ -26,4 +26,15 @@ double Segment::length (){
 	std::cout << "\nThe length is :";
 	return v.magnitude();
 	
+}
+
+double Segment::minDist(){
+	Vector v(p1, p2);	
+}
+
+Vector Segment::toVector(bool reverse=false){
+	if(reverse) 
+		return Vector(p2,p1);
+	return Vector(p1,p2);		
+
 }

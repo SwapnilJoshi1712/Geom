@@ -6,18 +6,20 @@
 int main(){
 
 	Point p1;
-	p1.print();
-	Point p2(10, 10, 10);
-	p2.print();
+	Point p2(0, 1, 0);
+	Point p3(1,0,0);
 
-	Vector v(1,1,1);
-	v.print();
+	Vector v1(p1,p2);
+	Vector v2(p1,p3);
+	
+	std::cout << "Projection of vector vo on v: " << v1.dot(v2) << "\n";
 
-	Vector v0(p1,p2);
-	v0.print();
+	std::cout << "Projection of vector vo on v: " << v1.dot(v1) << "\n";
 
 	Segment s1(p1, p2);
 	s1.print();
 	s1.length();
+	s1.toVector(false);
+	
 	return 0;
 }

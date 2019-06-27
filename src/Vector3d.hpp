@@ -16,8 +16,6 @@ public:
 	Vector(double i =0.0,double j= 0.0, double k = 0.0);
 
 	void print();
-//	Vector(const Vector& v); //copy constructor
-//	Vector(Vector&& v); //move constructor 
 
 //	Vector& operator= (const Vector& v);
 //	Vector& operator= (Vector&& v);
@@ -28,8 +26,8 @@ public:
 //	bool isProper() const;
 
 //	void info() const;
-	double magnitude();
-//	double dot(const Vector& v) const;
+	double magnitude() const;
+	double dot(const Vector& v1) const;
 
 	//modifiers
 /*	void scale(double val);

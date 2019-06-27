@@ -3,7 +3,8 @@
 
 #include "Point3d.hpp"
 #include "Shape.hpp"
-
+#include "Vector3d.hpp"
+#include <vector>
 
 class Segment: public Shape{
   public:
@@ -11,9 +12,13 @@ class Segment: public Shape{
 	  ~Segment();
  	  void print();
 	  double length();
+	  double minDist();
+	  Vector toVector(bool);
+	 
   private:
 	Point p1, p2;
 
 };
+
 
 #endif 

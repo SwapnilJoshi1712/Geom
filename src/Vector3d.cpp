@@ -28,14 +28,14 @@ void Vector::print(){
 
 }
 
-double Vector::magnitude() {
+double Vector::magnitude() const{
 	return sqrt(mI*mI + mJ*mJ + mK*mK);
 }
-/*
-bool Vector::isNull(){
-	if(mI==0)&&(mJ==0)&&(mK==0);
-}*/
 /*
 bool Vector::isUnit(){
 	
 }*/
+
+double Vector::dot(const Vector& v1) const{
+	return mI*v1.mI + mJ*v1.mJ + mK*v1.mK;
+}
